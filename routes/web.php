@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ProfilController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/nama', function () {
+    echo ('Icha Dwi BISA BISA');
+});
+
+Route::get('/nama/laravel', function () {
+    echo ('laravel');
+});
+
+Route::get('/profil', [ProfilController::class, 'index']);
