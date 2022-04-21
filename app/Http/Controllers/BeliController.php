@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class BeliController extends Controller
 {
-    //
+    public function beli()
+    {
+        echo 'Kuyyy beli disiniiiii';
+    }
 }
